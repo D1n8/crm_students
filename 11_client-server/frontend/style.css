@@ -1,0 +1,56 @@
+:root{
+  --col-width: calc((100% - 70px) / 4)
+}
+
+.container{
+  padding: 10px 20px;
+}
+
+.form-btn{
+  padding: 5px 10px;
+}
+
+.filters{
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter{
+  flex:25%
+}
+
+.filter-input{
+  width: 100%;
+}
+
+.titles{
+  display: flex;
+}
+
+.titles-col{
+  flex: var(--col-width) 0 0;
+  text-align: center;
+  border: 1px solid black;
+  font-size: 24px;
+}
+
+.student{
+  display: flex;
+}
+
+.student-info{
+  width: var(--col-width);
+  padding: 5px 0;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.btn-delete{
+  width: 70px;
+}
+
+.error-container{
+  margin: 10px 0;
+  color: red;
+}

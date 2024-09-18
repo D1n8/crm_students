@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список студентов</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            startControlSistem()
+        })
+    </script>
+</head>
+<body>
+    <div id="main-container" class="container">
+        <form id="form" class="form">
+            <h2 class="form-title">Добавить студента</h2>
+            <input id="surname" type="text" placeholder="Фамилия" required>
+            <input id="name" type="text" placeholder="Имя" required>
+            <input id="lastname" type="text" placeholder="Отчество" required>
+            <input id="birthday" type="date" placeholder="Дата рождения" required>
+            <input id="studyStart" type="text" placeholder="Год начала обучения" required>
+            <input id="faculty" type="text" placeholder="Факультет" required>
+            <button id="form-btn" class="form-btn">Добавить</button>
+        </form>
+        <div class="error-container"></div>
+        <div class="filters-container">
+            <h2 class="filters-title">Фильтр</h2>
+            <div class="filters">
+                <div class="filter">
+                    <h4 class="filter-subtitle">ФИО</h4>
+                    <input class="filter-input" id="filter_fullname" type="text" placeholder="Введите значение">
+                </div>
+                <div class="filter">
+                    <h4 class="filter-subtitle">Факультет</h4>
+                    <input class="filter-input" id="filter_faculty" type="text" placeholder="Введите значение">
+                </div>
+                <div class="filter">
+                    <h4 class="filter-subtitle">Год начала обучения</h4>
+                    <input class="filter-input" id="filter_year_start" type="text" placeholder="Введите значение">
+                </div>
+                <div class="filter">
+                    <h4 class="filter-subtitle">Год окончания обучения</h4>
+                    <input class="filter-input" id="filter_year_end" type="text" placeholder="Введите значение">
+                </div>
+                <button id="filter-btn" class="filter-btn">Фильтровать</button>
+            </div>
+        </div>
+        <ul class="titles">
+            <li id="titles_fullname" class="titles-col">ФИО</li>
+            <li id="titles_faculty" class="titles-col">Факультет</li>
+            <li id="titles_birth_date" class="titles-col">Дата рождения и возраст</li>
+            <li id="titles_years_study" class="titles-col">Годы обучения</li>
+        </ul>
+    </div>
+</body>
+</html>
